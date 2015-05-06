@@ -3,393 +3,824 @@ html
   head
     meta(charset='utf-8')
     meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
-    title The Return of the Progressive Web
+    title JS to Native - meetup.tidev.kr 201505
 
     link(rel='stylesheet', type='text/css', href='build/build.css')
-
+    link(rel="stylesheet", href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css")
+    link(rel="stylesheet", href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css")
   body
 
     article
 
       section
-        h2 The Return
-        h3 &mdash; of the &mdash;
-        h2 Progressive Web
-
+        //- img(style='width:80px;z-index:-1',src="images/yo/tidev.png")
+        hr
+        h2 JavaScript
+        h3 &mdash; to &mdash;
+        h2 Native
+        hr
+        h4 meetup.tidev.kr
+      
       section
-        img(style='position:absolute;top:10%;left:26%;z-index:-1', src='images/90scomputer.gif')
-        h2 HTTP 0.9
-        h3 &mdash; circ. 1991 &mdash;
-
+          //- img.circle(src="./images/jong.png",width="150px")
+          img(src="./images/yostudio_logo.svg",width="150px")
+          h2 이종은
+          h3
+            i.fa.fa-heart.red  &nbsp;
+            i.icon.ion-social-javascript  
+            i.icon.ion-iphone
+          h4
+            i.fa.fa-twitter
+            | &nbsp;
+            i.fa.fa-github 
+            | &nbsp;
+            a(href="https://github.com/yomybaby",target="_blank") yomybaby
+            br
+            img(src='./images/badge/tidev.png',width="25px")
+            |   tidev.kr
+            br
+            img(src='./images/nipa.gif',width="50px")
+            |   오픈 프론티어 2기
+            
       section
-        pre.mermaid.
-          graph TD;
-            web[http://example.com];
-            html[HTML Content];
-            web-->html;
-            html-- Link -->web;
-
-      section
-        pre.language-markup
-          code.
-            &lt;html&gt;
-            &lt;head&gt;&lt;title&gt;My Site&lt;/title&gt;&lt;/head&gt;
-            &lt;body&gt;
-              &lt;h1&gt;Welcome!&lt;/h1&gt;
-              &lt;p&gt;etc...&lt;/p&gt;
-            &lt;/body&gt;
-            &lt;/html&gt;
-
-      section(data-bespoke-backdrop='robot')
-        h2 Rise
-        h3 &mdash; of the &mdash;
-        h2 Googlebot
-
-      section
-        pre.mermaid.
-          graph TD;
-            a[Super Important Page];
-            b[Page];
-            c[Page];
-            d[Page];
-            e[Page];
-            f[Page];
-            g[Page];
-            a-- Link -->b;
-            b-- Link -->a;
-            c-- Link -->a;
-            d-- Link -->c;
-            d-- Link -->a;
-            e-- Link -->a;
-            f-- Link -->a;
-            g-- Link -->a;
-
-      section
-        h2 Good SEO
-        h3 &mdash; starts with &mdash;
-        h2 Crawlable content
-
-      section(data-bespoke-backdrop='netscape')
-        h2(style='margin-top: 300px') JavaScript
-        h3 &mdash; circ. 1995 &mdash;
-
-      section
-        pre.mermaid.
-          graph TD;
-            web[http://example.com];
-            html[HTML Content];
-            js[JavaScript];
-            web-->html;
-            html-- Link/Form -->web;
-            html-->js;
-            js-- "DHTML" -->html;
-
-      section
-        h2.single-words 10% Front-End UI Code
-
-      section
-        img(style='width:200px', src='images/jquery.png', alt='jQuery')
-        h2 <span style="text-transform:none">j</span>Query
-
-      section
-        ul
-          li Server renders HTML
-          li Styles applied via CSS
-          li Rich interactivity via JavaScript
-
-      section
-        h2 Progressive<br><br>Enhancement
-        h3 &mdash; circ. 2003 &mdash;
-
-      section(data-bespoke-backdrop='stevechampeon')
-        h3(style='width:70%') &ldquo;&hellip;all the way up from &ldquo;baseline&rdquo;, to &ldquo;legacy&rdquo;, to &ldquo;midrange&rdquo;, to &ldquo;modern&rdquo; and beyond.&rdquo;
-        h4 Steve Champeon
-
-      section(data-bespoke-backdrop='lukew')
-        h3(style='width:50%') &ldquo;Build in layers, from HTML to CSS to Javascript. This creates a less fragile and more foolproof Web page&rdquo;
-        h4 Luke Wroblewski
-
-      section(data-bespoke-backdrop='bradf')
-        h3(style='width:60%') &ldquo;Progressive enhancement becomes an important strategy in order to deal with today and tomorrow&rsquo;s diverse landscape.&rdquo;
-        h4 Brad Frost
-
-      section(data-bespoke-backdrop='aarong')
-        h3 &ldquo;Fundamentally, progressive<br>enhancement is about accessibility&rdquo;
-        h4 Aaron Gustafson
-
-      section
-        h2 Building with
-        h3 &mdash; the web&rsquo;s &mdash;
-        h2 Foundational elements
-
-      section
-        ul
-          li Semantic HTML
-          li Links and forms
-          li Standard form elements
-
-      section
-        h2 &nbsp;Accessible,<br><br>Curlable
-        h3 &mdash; &amp; &mdash;
-        h2 Crawlable
-
-      section
-        h3 Until&hellip;
-
-      section
-        h2 The Ajax Revolution
-        h3 &mdash; circ. 2005 &mdash;
-
-      section
-        pre.mermaid.
-          graph TD;
-            web[http://example.com];
-            api[http://api.example.com];
-            html[HTML Content];
-            js[JavaScript];
-            web-->html;
-            html-- Link/Form -->web;
-            html-->js;
-            js-- AJAX -->api;
-            api-->js;
-            js-- "DHTML" -->html;
-
-      section
-        h2.single-words(style="margin-bottom:-5px") Rise
-        h3 &mdash; of the &mdash;
-        h2.single-words Single Page App
-
-      section
-        pre.mermaid.
-          graph TD;
-            web[http://example.com];
-            api[http://api.example.com];
-            js[JavaScript];
-            web-- HTML Transport -->js;
-            js-- AJAX -->api;
-            api-->js;
-
-      section
-        h2.single-words 100% Front-End UI Code
-
-      section
-        img(style='width:20%', src='images/angularjs.png', alt='AngularJS')
-        br
-        h2 AngularJS
-
-      section
-        h2 The tradeoff?
-
-      section
-        pre.language-markup
-          code.
-            &lt;html&gt;
-            &lt;head&gt;&lt;title&gt;My Site&lt;/title&gt;&lt;/head&gt;
-            &lt;body&gt;
-              &lt;script src="my-awesome-app.js"&gt;&lt;/script&gt;
-            &lt;/body&gt;
-
-      section
-        .iphone
-        h3 Your single page app without JavaScript
-
-      section
-        h3(style='width:80%') &ldquo;Make sure your web design adheres to the principles of progressive enhancement as this helps our systems (and a wider range of browsers) see usable content and basic functionality&rdquo;
-        h4 Google Webmaster Central
-
-      section
-        h3 &ldquo;We don&rsquo;t have any non-JavaScript users&rdquo;?
-
-      section(data-bespoke-backdrop='jakea')
-        h3 &ldquo;All your users are non-JS<br>while they&rsquo;re downloading your JS&rdquo;
-        h4 Jake Archibald, Google
-
-      section(data-bespoke-backdrop='loading')
-        h2 Designed
-        h3 &mdash; for the &mdash;
-        h2 real world
-
-      section
-        h3 If you haven&rsquo;t tested your design<br>on a spotty 3G connection,<br>you haven&rsquo;t tested your design
-
-      section
-        h3 &mdash; When should we use &mdash;
-        h2 progressive<br><br>enhancement?
-
-      section
-        ul
-          li Initial page load speed is critical
-          li SEO is a priority
-          li Accessibility is a priority
-          li Your site is content-driven &amp; publicly available
-          li Your site is an &ldquo;essential service&rdquo;, i.e. <a href="http://www.abc.net.au/news/2014-11-05/blind-woman-launches-court-action-against-coles-over-its-website/5869874">Coles Online</a>
-
-      section
-        h3 &mdash; Why should we &mdash;
-        h2 Create single<br><br>page apps?
-
-      section
-        ul
-          li Long-lived applications
-          li Richer, more app-like experiences
-          li Fluid transitions between multiple states
-          li Singular, cohesive UI codebase
-          li Easier to build, test and reason about
-          li Can be packaged into an app, e.g. PhoneGap
-
-      section
-        h2 Make a choice&hellip;
-        h3 Progressive enhancement or rich, app-like experience?
-
-      section
-        h2 Meanwhile&hellip;
-
-      section
-        img(style='width:30%', src='images/nodejs.png', alt='Node.js')
-        h2 Node.js
-
-      section
-        img(style='width:50%', src='images/browserify.png', alt='Browserify')
-
-      section
-        h3 &mdash; The promise of &mdash;
         h2
-          a(href='http://nerds.airbnb.com/isomorphic-javascript-future-web-apps/') Isomorphic JavaScript
+          i.fa.fa-heart.fa-4x.red
+        h2 javascript
+        
+      section
+        img(src="https://nodejs.org/images/logo.svg",width="300px")
 
       section
-        img(style='width:30%; margin-bottom: 12px', src='images/rendr.png', alt='Rendr')
-        h3 &amp;
-        img(style='width:15%', src='images/backbone.png', alt='Backbone')
+        img(src='http://i1-news.softpedia-static.com/images/news2/Chrome-May-Add-Support-for-Mozilla-s-Asm-js-the-Native-Client-Competitor-2.png',style='width:250px')
+        h2 by  
+          i.fa.fa-google
+        //- h2 V8
 
       section
-        h2.single-words 100% Isomorphic UI Code
+        h2.bullet 
+          i.icon.ion-ios-eye-outline.fa-5x
+        h2.bullet
+          i.fa.fa-server
+          | Server
+        h2.bullet
+          i.fa.fa-flash
+          | Socket
+      
+      //- section
+        h2 브라우저 밖으로 탈출!!
+        
+      section
+        h2
+          i.icon.ion-ios-star.fa-4x.red
 
       section
-        img(style='width:20%', src='images/react.png', alt='React')
+        span.fa-3x.green.bullet 우물 안 🐸
+        h2.bullet DOM만 가지고 놀던 아이
+
+      section
+        h2.fa-3x
+          i.icon.ion-log-out
+          | 탈출
+      section
+        //- img(src="https://nodejs.org/images/logo.svg",width="200px")
+        h2
+          i.icon.ion-social-nodejs.fa-3x  
+          i.icon.ion-arrow-swap.fa-3x.gray  
+          i.fa.fa-file-text-o.fa-3x
+        //- h2 JS로 파일을 읽고 쓰다
+
+      section
+        h2.bullet 프론트엔드 개발자
+        h2.bullet JavaScript로
+        h2.bullet 
+          i.fa.fa-file-text-o
+          |  파일을 다루는
+        h2.bullet 도구를 직접 만들다 
+        h2.bullet(style='position:absolute;top:17%;left:35%;z-index:-1')
+          i(style='font-size:8em').fa.fa-thumbs-o-up.gray
+
+      section
+        h2 Node.js
+        h2.fa-5x 생태계
+        span.fa-3x💧🌼🐝🍯🐻
+      
+      section
+        img(src="http://sogrady-media.redmonk.com/sogrady/files/2015/01/lang.rank_.plot_.q1152.png",width="500px")
+        h4 Top Language of Q1 2015
+      
+      //- section
+          img(style='width:30%', src='images/nodejs.png', alt='Node.js')
+          h2 Node.js
+          
+      section
+        h2 브라우저을 넘어
+        h1 개발 도구
+        h3 (test, build.. on <a href="http://npmjs.com" target="_blank">NPM</a>)
+        h2.bullet(style='position:absolute;top:80%;left:31.3%;z-index:-1')
+          i(style='font-size:12em').icon.ion-social-nodejs.darkgray
+
+      section
+        h2 브라우저을 넘어
+        h1 하드웨어까지
+        h3 (
+          a(href="http://spark.io") Spark
+          | , 라즈베리파이..)
+        h2.bullet(style='position:absolute;top:80%;left:31.3%;z-index:-1')
+          i(style='font-size:12em').icon.ion-social-nodejs.darkgray
+
+      section
+        h2 브라우저을 넘어   
+        h1 Native App
+        h3 (Titanium, React Native, NativeScript..)
+        h2.bullet(style='position:absolute;top:80%;left:31.3%;z-index:-1')
+          i(style='font-size:12em').icon.ion-social-nodejs.darkgray
+          
+      section(data-bespoke-state='puple')
+        hr
+        h2 JavaScript
+        h3 &mdash; to &mdash;
+        h2 Native
+        hr
+          
+      section
+        h3 &mdash; 의문 하나 &mdash;
+        h2 어떻게 JS가 Native를?
+      
+      section
+        h2
+          i.icon.ion-social-chrome.fa-4x
+          br
+          br
+          | 먼저, 브라우저
+      
+      section
+        h3 &mdash; 브라우저에 존재하는 &mdash;
+        h2 두 가지 World
+        span.fa-5x.bullet
+          i.icon.ion-planet.green
+          |  〰〰〰 
+          i.icon.ion-planet
+        h2.bullet(style="width:70%;") 
+          span(style="width:100px; float:left; text-align:center;").green JS
+          span(style="width:120px; float:right; text-align:center;") DOM
+      
+      section
+        pre.language-javascript
+          code.
+            var elem = document.getElementById("title");
+            elem.style.color = newColor;
+      
+      section
+        //- h3 JS  DOM
+        pre.mermaid.
+          sequenceDiagram
+            JS->>DOM: getElementById
+            DOM-->>JS: (result)
+            JS->>DOM: elem.style.color = newColor
+            
+      section
+        span.fa-5x
+          i.icon.ion-planet.green
+          |  〰〰〰 
+          i.icon.ion-planet
+        h2(style="width:70%;") 
+          span(style="width:100px; float:left; text-align:center;").green JS
+          span(style="width:120px; float:right; text-align:center;") DOM
+      
+      section
+        span.fa-5x
+          i.icon.ion-planet.green
+          |  〰〰〰 
+          i.icon.ion-planet.red
+        h2(style="width:70%;") 
+          span(style="width:100px; float:left; text-align:center;").green JS
+          span(style="width:155px; float:right; text-align:center;").red NATIVE
+      
+      section
+        h2 runtime
+        ul
+          li not in webview
+        
+      section
+        pre.language-javascript
+          code.
+            var view = Ti.UI.createView();
+            view.width = 300;
+      
+      section
+        pre.mermaid.
+          sequenceDiagram
+            JS->>Native: createView()
+            Native-->>JS: (result)
+            JS->>Native: view.width = 300;
+      
+      section
+        a(href="https://imagesbyheatherm.wordpress.com/2010/04/08/mackinac-bridge-svg-file/",target="_blank",style="border-bottom: none;")
+          img(src="./images/Mackinac bridge.svg",width="300px",style="margin-left:35px")
+        h3 &mdash; from js to native &mdash;
+        h2 Bridge
+        
+      section
+        pre.mermaid(style='font-size:0.7em').
+          sequenceDiagram
+            JS->>Ti Native SDK: createView()
+            Ti Native SDK->>Native SDK: [[TiUIView alloc] init]
+            Native SDK-->>Ti Native SDK: (result)
+            Ti Native SDK-->>JS: (result)
+            JS->>Ti Native SDK: view.width = 300;
+            Ti Native SDK->>Native SDK: self.frame.size.width = 300;
+        
+      section
+        h2 ASYNC
+        h3 &mdash; of &mdash;
+        h2 SYNC
+      
+      section
+        h2 BG Thread
+        h3 &mdash; of &mdash;
+        h2 UI Thread
+        
+      section
+        ul.fa-2x
+          li Ti & Virtual-dom
+          li React Native
+          li Cocos2d-js
+          li Ti & Java Spring
+      
+      section
+        h3 &mdash; 1 &mdash;
+        h1 Virtual-dom 컨셉을 Titanium에 적용하기
+        h4 이종은
+      
+      section
+        h2
+          i.icon.ion-erlenmeyer-flask.fa-5x
+        h2.fa-2x 그냥 해봄
+      
+      section
+        img(style='width:20%', src='./images/react.png', alt='React')
         br
         h2 React
-
+      
       section
-        pre.language-javascript
-          code.
-            // Server
-            React.renderToString(&lt;Component /&gt;);
-
+        i.fa.fa-heart.fa-3x.red
+        h3 사고의 흐름
+        h2 단순
+      
       section
-        pre.language-markup
-          code.
-            &lt;div id="app"
-              data-reactid=".23qqlyvw6io"
-              data-react-checksum="509597258"&gt;
-
-              &lt;h1 data-reactid=".23qqlyvw6io.0" &gt;Welcome!&lt;/h1&gt;
-              &lt;p data-reactid=".23qqlyvw6io.1" &gt;etc...&lt;/p&gt;
-
-            &lt;/div&gt;
-            &lt;script src="my-awesome-app.js"&gt;&lt;/script&gt;
-
+        h3.bullet 데이터가 바뀌면?
+        h2.bullet 다시그려
+      
       section
-        pre.language-javascript
-          code.
-            // Client
-            React.render(&lt;Component /&gt;, element);
-
-            // Your server rendered code
-            // is now a single page app!
-
+        img(src="./images/yo/shot1.jpg",width="250px")
+      
       section
-        pre.mermaid.
-          graph TB;
-            web[http://example.com];
-            api[http://api.example.com];
-            html[HTML Content];
-            js[React Code];
-            web-- I. Runs -->js;
-            js-- II. Request -->api;
-            api-- III. Response -->js;
-            js-- IV. Renders --> html;
-            html-- V. Runs --> js;
-        h3.caption Fig. I &mdash; With Client JavaScript
-
+        h3.bullet 매번 다시그리면?
+        h2.bullet 성능저하!
+          span.fa-2x 🐢
+      
       section
-        pre.mermaid.
-          graph TB;
-            web[http://example.com];
-            html[HTML Content];
-            web-- I. Runs React code -->html;
-            html-- II. Link/Form --> web;
-        h3.caption Fig. II &mdash; Without Client JavaScript
-
-      section
+        img(src="./images/yo/shot2.png",width="250px")
+        br
+        h2.bullet Todos
         ul
-          li Progressively enhanced
-          li Gracefully degrades to web 1.0
-          li Inherently crawlable
-          li More accessible by default
-
-      section
-        h3 Ryan Florence&rsquo;s
-        h2
-          a(href='https://github.com/rackt/react-router-mega-demo') react-router-mega-demo
-
-      section
-        h1 Holy grail
-
-      section
-        h2 Beyond React&hellip;
-
+          li 전체를 그리기
+          li 하나만 삭제(or 추가)
+          li 바뀐거만 업데이트
+          li 순서만 바꾸기
+      
       section(data-bespoke-backdrop='virtual-dom')
         h2
           a(href='https://github.com/Matt-Esch/virtual-dom') virtual-dom
-
-      section(data-bespoke-backdrop='glimmer')
-        h3 Ember&rsquo;s
+          
+      section
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/z5e7kWSHWTg?autoplay=0&start=149" frameborder="0" allowfullscreen></iframe>
+      
+      section
+        a(href="https://imagesbyheatherm.wordpress.com/2010/04/08/mackinac-bridge-svg-file/",target="_blank",style="border-bottom: none;")
+          img(src="./images/Mackinac bridge.svg",width="300px",style="margin-left:35px")
+        h3 &mdash; from js to native &mdash;
+        h2.bullet Bridge
+        h2.bullet  강 건너는 기술 
+      
+      section
+        h3 &mdash; 기술 1 &mdash;
+        h2 바뀐 것 찾기
+        h4 (= 조금 만 나르기)
+      
+      section
+        img(src="http://calendar.perfplanet.com/wp-content/uploads/2013/12/vjeux/1.png")
+      section
+        img(src="http://calendar.perfplanet.com/wp-content/uploads/2013/12/vjeux/2.png")
+      section          
+        img(src="http://calendar.perfplanet.com/wp-content/uploads/2013/12/vjeux/3.png")
+      section
+        img(src="http://calendar.perfplanet.com/wp-content/uploads/2013/12/vjeux/5.png")
+      section
+        img(src="http://calendar.perfplanet.com/wp-content/uploads/2013/12/vjeux/6.png")
+          
+      section
         h2
-          a(href='https://github.com/emberjs/ember.js/pull/10501') Glimmer
-        h3 &amp;
+          i.icon.ion-erlenmeyer-flask  
+          a(href="https://github.com/yomybaby/VirtualTiExample",target="_blank") Virtual Ti
+      
+      section
         h2
-          a(href='http://emberjs.com/blog/2014/12/22/inside-fastboot-the-road-to-server-side-rendering.html') FastBoot
-
-      section
-        h2 In closing&hellip;
-
-      section
-        h2 Making a choice&hellip;
-        h3 Between progressive enhancement or a rich, app-like experience?
-
-      section
-        img(style='height: 80%; border: 1vh solid white; border-radius: 1vh', src='images/whynotboth.gif', alt="Why don't we have both?")
-
-      section
-        h3 &mdash; &ldquo;UX specialist&rdquo;? &mdash;
-        br
-        h2 Progressive<br><br>Enhancement is all<br><br>about the user
-
-      section
-        h3 &mdash; &ldquo;Front end developer&rdquo;? &mdash;
-        br
-        h2 You should be<br><br>looking at this<br><br>right now
-
-      section
-        h2 The future
-        h3 &mdash; belongs to &mdash;
-        h2 Rich, progressive apps
-
-      section
-        img.avatar(src='images/profile.jpg')
-        h3
-          a(href='https://twitter.com/markdalgleish') @markdalgleish
-
-      section
-        h3.bullet Looking to get started with progressive React?
+          i.icon.ion-erlenmeyer-flask  
+          | 목적
         ul
-          li
-            a(href='https://github.com/rackt/react-router-mega-demo') react-router-mega-demo
-          li
-            a(href='https://github.com/steida/este') Este.js
-          li
-            a(href='https://github.com/irvinebroque/isomorphic-hot-loader') isomorphic-hot-loader
-          li
-            a(href='https://github.com/gpbl/isomorphic-react-template') isomorphic-react-template
+          li 단순하게 만들어도 빠르다
+      
+      section(data-bespoke-backdrop='virtual-dom')
+        h2
+          a(href='https://github.com/Matt-Esch/virtual-dom') virtual-dom
+        
+      section
+        h2 Steps
+        ul
+          li Virtual dom을 만들고
+          li Virtual dom을 이용하여 실제 ui를 만들고
+          li 새로 그려야할 때 새로운 Virtual dom을 만들고
+          li 이전 Virtual dom과 비교해서 최적화된 patch를 만들고
+          li 실제 ui에 해당 patch를 적용
+        
+      section
+        table
+          tr
+            th React
+            th
+            th Virtual-Ti
+          tr
+            td
+              img(src="./images/yo/react.gif",width="150px")
+            td &nbsp;&nbsp;&nbsp;&nbsp;
+            td
+              img(src="./images/yo/virtualti.gif",width="150px")
+      
+      section
+        h2.fa-2x 😱
+        h2 절망 
+      
+      section
+        h3.bullet Q. 모바일에서 이런 상황이 있었나?  
+        h1.bullet A. 😂 없었다
+        
+      section
+        h3 &mdash; 그건 그렇쳐도 &mdash;
+        h2 React는 무슨 재주로?  
+      
+      section
+        h3 &mdash; 기술 2 &mdash;
+        h2 한번에 나르기
+        //- h4 (= 조금 만 나르기)  
+      
+      section
+        img(src="http://calendar.perfplanet.com/wp-content/uploads/2013/12/vjeux/4.png")        
+          
+      section
+        h3 &mdash; performance? &mdash;
+        pre.mermaid.
+          sequenceDiagram
+            JS->>Native: a
+            JS->>Native: b
+            JS->>Native: c
+        pre.language-javascript(style="font-size:0.7em")
+          code.
+            view.width = 300;
+            view.backgroundColor = '#ff0000';
+            view.borderColor = '#ffff00';
+        
+      section
+        h3 &mdash; performance! &mdash;
+        pre.mermaid.
+          sequenceDiagram
+            JS->>Native: a,b,c
+        pre.language-javascript(style="font-size:0.7em")
+          code.
+            view.applyProperties({
+              width: 300,
+              backgroundColor: '#ff0000',
+              borderColor: '#ffff00'
+            });
+      
+      section
+        h2 performance!!
+        pre.mermaid.
+          sequenceDiagram
+            JS->>Native: A,B,C
+        pre.language-javascript(style="font-size:0.5em")
+          code.
+            view.applyProperties({
+              // new properties
+            });
+            view.applyProperties({
+              // new properties
+            });
+            view.applyProperties({
+              // new properties
+            });
+      
+      
+      section
+        h2 Titanium
+        h3 &mdash; vs. &mdash; 
+        h2 React
+      
+      section(data-bespoke-backdrop='fight')
+        h2 Titanium
+        h3 &mdash; vs. &mdash; 
+        h2 React
+      
+      section
+        h3 React Native
+        h2.bullet Android
+        hr
+        div.bullet
+          h3 Titanium
+          h2 Ti.Next
+      
+      section(data-bespoke-backdrop='ryu')
+        h2.fa-2x 제대로 한판
+        h3 기대해봅니다!
+        br
+        h3 &mdash; 끝 &mdash;
+      
+      
+      //-   
+      //- section
+      //-   img(style='position:absolute;top:10%;left:26%;z-index:-1', src='images/90scomputer.gif')
+      //-   h2 HTTP 0.9
+      //-   h3 &mdash; circ. 1991 &mdash;
+      //- 
+      //- section
+      //-   pre.mermaid.
+      //-     graph TD;
+      //-       web[http://example.com];
+      //-       html[HTML Content];
+      //-       web-->html;
+      //-       html-- Link -->web;
+      //- 
+      //- section
+      //-   pre.language-markup
+      //-     code.
+      //-       &lt;html&gt;
+      //-       &lt;head&gt;&lt;title&gt;My Site&lt;/title&gt;&lt;/head&gt;
+      //-       &lt;body&gt;
+      //-         &lt;h1&gt;Welcome!&lt;/h1&gt;
+      //-         &lt;p&gt;etc...&lt;/p&gt;
+      //-       &lt;/body&gt;
+      //-       &lt;/html&gt;
+      //- 
+      //- section(data-bespoke-backdrop='robot')
+      //-   h2 Rise
+      //-   h3 &mdash; of the &mdash;
+      //-   h2 Googlebot
+      //- 
+      //- section
+      //-   pre(style='font-size:0.6em').mermaid.
+      //-     graph TD;
+      //-       a[Super Important Page];
+      //-       b[Page];
+      //-       c[Page];
+      //-       d[Page];
+      //-       e[Page];
+      //-       f[Page];
+      //-       g[Page];
+      //-       a-- Link -->b;
+      //-       b-- Link -->a;
+      //-       c-- Link -->a;
+      //-       d-- Link -->c;
+      //-       d-- Link -->a;
+      //-       e-- Link -->a;
+      //-       f-- Link -->a;
+      //-       g-- Link -->a;
+      //- 
+      //- section
+      //-   h2 Good SEO
+      //-   h3 &mdash; starts with &mdash;
+      //-   h2 Crawlable content
+      //- 
+      //- section(data-bespoke-backdrop='netscape')
+      //-   h2(style='margin-top: 300px') JavaScript
+      //-   h3 &mdash; circ. 1995 &mdash;
+      //- 
+      //- section
+      //-   pre.mermaid.
+      //-     graph TD;
+      //-       web[http://example.com];
+      //-       html[HTML Content];
+      //-       js[JavaScript];
+      //-       web-->html;
+      //-       html-- Link/Form -->web;
+      //-       html-->js;
+      //-       js-- "DHTML" -->html;
+      //- 
+      //- section
+      //-   h2.single-words 10% Front-End UI Code
+      //- 
+      //- section
+      //-   img(style='width:200px', src='images/jquery.png', alt='jQuery')
+      //-   h2 <span style="text-transform:none">j</span>Query
+      //- 
+      //- section
+      //-   ul
+      //-     li Server renders HTML
+      //-     li Styles applied via CSS
+      //-     li Rich interactivity via JavaScript
+      //- 
+      //- section
+      //-   h2 Progressive<br><br>Enhancement
+      //-   h3 &mdash; circ. 2003 &mdash;
+      //- 
+      //- section(data-bespoke-backdrop='stevechampeon')
+      //-   h3(style='width:70%') &ldquo;&hellip;all the way up from &ldquo;baseline&rdquo;, to &ldquo;legacy&rdquo;, to &ldquo;midrange&rdquo;, to &ldquo;modern&rdquo; and beyond.&rdquo;
+      //-   h4 Steve Champeon
+      //- 
+      //- section(data-bespoke-backdrop='lukew')
+      //-   h3(style='width:50%') &ldquo;Build in layers, from HTML to CSS to Javascript. This creates a less fragile and more foolproof Web page&rdquo;
+      //-   h4 Luke Wroblewski
+      //- 
+      //- section(data-bespoke-backdrop='bradf')
+      //-   h3(style='width:60%') &ldquo;Progressive enhancement becomes an important strategy in order to deal with today and tomorrow&rsquo;s diverse landscape.&rdquo;
+      //-   h4 Brad Frost
+      //- 
+      //- section(data-bespoke-backdrop='aarong')
+      //-   h3 &ldquo;Fundamentally, progressive<br>enhancement is about accessibility&rdquo;
+      //-   h4 Aaron Gustafson
+      //- 
+      //- section
+      //-   h2 Building with
+      //-   h3 &mdash; the web&rsquo;s &mdash;
+      //-   h2 Foundational elements
+      //- 
+      //- section
+      //-   ul
+      //-     li Semantic HTML
+      //-     li Links and forms
+      //-     li Standard form elements
+      //- 
+      //- section
+      //-   h2 &nbsp;Accessible,<br><br>Curlable
+      //-   h3 &mdash; &amp; &mdash;
+      //-   h2 Crawlable
+      //- 
+      //- section
+      //-   h3 Until&hellip;
+      //- 
+      //- section
+      //-   h2 The Ajax Revolution
+      //-   h3 &mdash; circ. 2005 &mdash;
+      //- 
+      //- section
+      //-   pre.mermaid.
+      //-     graph TD;
+      //-       web[http://example.com];
+      //-       api[http://api.example.com];
+      //-       html[HTML Content];
+      //-       js[JavaScript];
+      //-       web-->html;
+      //-       html-- Link/Form -->web;
+      //-       html-->js;
+      //-       js-- AJAX -->api;
+      //-       api-->js;
+      //-       js-- "DHTML" -->html;
+      //- 
+      //- section
+      //-   h2.single-words(style="margin-bottom:-5px") Rise
+      //-   h3 &mdash; of the &mdash;
+      //-   h2.single-words Single Page App
+      //- 
+      //- section
+      //-   pre.mermaid.
+      //-     graph TD;
+      //-       web[http://example.com];
+      //-       api[http://api.example.com];
+      //-       js[JavaScript];
+      //-       web-- HTML Transport -->js;
+      //-       js-- AJAX -->api;
+      //-       api-->js;
+      //- 
+      //- section
+      //-   h2.single-words 100% Front-End UI Code
+      //- 
+      //- section
+      //-   img(style='width:20%', src='images/angularjs.png', alt='AngularJS')
+      //-   br
+      //-   h2 AngularJS
+      //- 
+      //- section
+      //-   h2 The tradeoff?
+      //- 
+      //- section
+      //-   pre.language-markup
+      //-     code.
+      //-       &lt;html&gt;
+      //-       &lt;head&gt;&lt;title&gt;My Site&lt;/title&gt;&lt;/head&gt;
+      //-       &lt;body&gt;
+      //-         &lt;script src="my-awesome-app.js"&gt;&lt;/script&gt;
+      //-       &lt;/body&gt;
+      //- 
+      //- section
+      //-   .iphone
+      //-   h3 Your single page app without JavaScript
+      //- 
+      //- section
+      //-   h3(style='width:80%') &ldquo;Make sure your web design adheres to the principles of progressive enhancement as this helps our systems (and a wider range of browsers) see usable content and basic functionality&rdquo;
+      //-   h4 Google Webmaster Central
+      //- 
+      //- section
+      //-   h3 &ldquo;We don&rsquo;t have any non-JavaScript users&rdquo;?
+      //- 
+      //- section(data-bespoke-backdrop='jakea')
+      //-   h3 &ldquo;All your users are non-JS<br>while they&rsquo;re downloading your JS&rdquo;
+      //-   h4 Jake Archibald, Google
+      //- 
+      //- section(data-bespoke-backdrop='loading')
+      //-   h2 Designed
+      //-   h3 &mdash; for the &mdash;
+      //-   h2 real world
+      //- 
+      //- section
+      //-   h3 If you haven&rsquo;t tested your design<br>on a spotty 3G connection,<br>you haven&rsquo;t tested your design
+      //- 
+      //- section
+      //-   h3 &mdash; When should we use &mdash;
+      //-   h2 progressive<br><br>enhancement?
+      //- 
+      //- section
+      //-   ul
+      //-     li Initial page load speed is critical
+      //-     li SEO is a priority
+      //-     li Accessibility is a priority
+      //-     li Your site is content-driven &amp; publicly available
+      //-     li Your site is an &ldquo;essential service&rdquo;, i.e. <a href="http://www.abc.net.au/news/2014-11-05/blind-woman-launches-court-action-against-coles-over-its-website/5869874">Coles Online</a>
+      //- 
+      //- section
+      //-   h3 &mdash; Why should we &mdash;
+      //-   h2 Create single<br><br>page apps?
+      //- 
+      //- section
+      //-   ul
+      //-     li Long-lived applications
+      //-     li Richer, more app-like experiences
+      //-     li Fluid transitions between multiple states
+      //-     li Singular, cohesive UI codebase
+      //-     li Easier to build, test and reason about
+      //-     li Can be packaged into an app, e.g. PhoneGap
+      //- 
+      //- section
+      //-   h2 Make a choice&hellip;
+      //-   h3 Progressive enhancement or rich, app-like experience?
+      //- 
+      //- section
+      //-   h2 Meanwhile&hellip;
+      //- 
+      //- section
+      //-   img(style='width:30%', src='images/nodejs.png', alt='Node.js')
+      //-   h2 Node.js
+      //- 
+      //- section
+      //-   img(style='width:50%', src='images/browserify.png', alt='Browserify')
+      //- 
+      //- section
+      //-   h3 &mdash; The promise of &mdash;
+      //-   h2
+      //-     a(href='http://nerds.airbnb.com/isomorphic-javascript-future-web-apps/') Isomorphic JavaScript
+      //- 
+      //- section
+      //-   img(style='width:30%; margin-bottom: 12px', src='images/rendr.png', alt='Rendr')
+      //-   h3 &amp;
+      //-   img(style='width:15%', src='images/backbone.png', alt='Backbone')
+      //- 
+      //- section
+      //-   h2.single-words 100% Isomorphic UI Code
+      //- 
+      //- section
+      //-   img(style='width:20%', src='images/react.png', alt='React')
+      //-   br
+      //-   h2 React
+      //- 
+      //- section
+      //-   pre.language-javascript
+      //-     code.
+      //-       // Server
+      //-       React.renderToString(&lt;Component /&gt;);
+      //- 
+      //- section
+      //-   pre.language-markup
+      //-     code.
+      //-       &lt;div id="app"
+      //-         data-reactid=".23qqlyvw6io"
+      //-         data-react-checksum="509597258"&gt;
+      //- 
+      //-         &lt;h1 data-reactid=".23qqlyvw6io.0" &gt;Welcome!&lt;/h1&gt;
+      //-         &lt;p data-reactid=".23qqlyvw6io.1" &gt;etc...&lt;/p&gt;
+      //- 
+      //-       &lt;/div&gt;
+      //-       &lt;script src="my-awesome-app.js"&gt;&lt;/script&gt;
+      //- 
+      //- section
+      //-   pre.language-javascript
+      //-     code.
+      //-       // Client
+      //-       React.render(&lt;Component /&gt;, element);
+      //- 
+      //-       // Your server rendered code
+      //-       // is now a single page app!
+      //- 
+      //- section
+      //-   pre.mermaid.
+      //-     graph TB;
+      //-       web[http://example.com];
+      //-       api[http://api.example.com];
+      //-       html[HTML Content];
+      //-       js[React Code];
+      //-       web-- I. Runs -->js;
+      //-       js-- II. Request -->api;
+      //-       api-- III. Response -->js;
+      //-       js-- IV. Renders --> html;
+      //-       html-- V. Runs --> js;
+      //-   h3.caption Fig. I &mdash; With Client JavaScript
+      //- 
+      //- section
+      //-   pre.mermaid.
+      //-     graph TB;
+      //-       web[http://example.com];
+      //-       html[HTML Content];
+      //-       web-- I. Runs React code -->html;
+      //-       html-- II. Link/Form --> web;
+      //-   h3.caption Fig. II &mdash; Without Client JavaScript
+      //- 
+      //- section
+      //-   ul
+      //-     li Progressively enhanced
+      //-     li Gracefully degrades to web 1.0
+      //-     li Inherently crawlable
+      //-     li More accessible by default
+      //- 
+      //- section
+      //-   h3 Ryan Florence&rsquo;s
+      //-   h2
+      //-     a(href='https://github.com/rackt/react-router-mega-demo') react-router-mega-demo
+      //- 
+      //- section
+      //-   h1 Holy grail
+      //- 
+      //- section
+      //-   h2 Beyond React&hellip;
+      //- 
+      //- section(data-bespoke-backdrop='virtual-dom')
+      //-   h2
+      //-     a(href='https://github.com/Matt-Esch/virtual-dom') virtual-dom
+      //- 
+      //- section(data-bespoke-backdrop='glimmer')
+      //-   h3 Ember&rsquo;s
+      //-   h2
+      //-     a(href='https://github.com/emberjs/ember.js/pull/10501') Glimmer
+      //-   h3 &amp;
+      //-   h2
+      //-     a(href='http://emberjs.com/blog/2014/12/22/inside-fastboot-the-road-to-server-side-rendering.html') FastBoot
+      //- 
+      //- section
+      //-   h2 In closing&hellip;
+      //- 
+      //- section
+      //-   h2 Making a choice&hellip;
+      //-   h3 Between progressive enhancement or a rich, app-like experience?
+      //- 
+      //- section
+      //-   img(style='height: 80%; border: 1vh solid white; border-radius: 1vh', src='images/whynotboth.gif', alt="Why don't we have both?")
+      //- 
+      //- section
+      //-   h3 &mdash; &ldquo;UX specialist&rdquo;? &mdash;
+      //-   br
+      //-   h2 Progressive<br><br>Enhancement is all<br><br>about the user
+      //- 
+      //- section
+      //-   h3 &mdash; &ldquo;Front end developer&rdquo;? &mdash;
+      //-   br
+      //-   h2 You should be<br><br>looking at this<br><br>right now
+      //- 
+      //- section
+      //-   h2 The future
+      //-   h3 &mdash; belongs to &mdash;
+      //-   h2 Rich, progressive apps
+      //- 
+      //- section
+      //-   img.avatar(src='images/profile.jpg')
+      //-   h3
+      //-     a(href='https://twitter.com/markdalgleish') @markdalgleish
+      //- 
+      //- section
+      //-   h3.bullet Looking to get started with progressive React?
+      //-   ul
+      //-     li
+      //-       a(href='https://github.com/rackt/react-router-mega-demo') react-router-mega-demo
+      //-     li
+      //-       a(href='https://github.com/steida/este') Este.js
+      //-     li
+      //-       a(href='https://github.com/irvinebroque/isomorphic-hot-loader') isomorphic-hot-loader
+      //-     li
+      //-       a(href='https://github.com/gpbl/isomorphic-react-template') isomorphic-react-template
 
     script(src='build/build.js')

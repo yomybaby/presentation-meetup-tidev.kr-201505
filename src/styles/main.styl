@@ -12,6 +12,9 @@ $textColor = #000
 $boxColor = #fff
 $arrowColor = #fff
 
+
+
+
 svg
   color: $textColor
   font-family: didot
@@ -31,6 +34,18 @@ svg
     color: white !important
     font-size: .6em
     padding: .5em .6em 1.5em
+
+.messageLine0, .messageLine1
+  // stroke-width:1.5
+  // stroke-dasharray: "2 2"
+  // marker-end:"url(#arrowhead)"
+  stroke:$arrowColor
+
+.messageText 
+  fill: $arrowColor
+  
+.actor-line
+  stroke-width: 2
 
 li
   font-family: didot
@@ -143,3 +158,57 @@ a h4
   &.bespoke-backdrop-active,
   &.bespoke-backdrop-before
     transform: scale(1)
+
+.fight
+  background-image: url('../images/yo/fight.gif')
+  transform: none !important
+  &.bespoke-backdrop-active
+    opacity: 0.8
+
+.ryu
+  background-image: url('../images/yo/ryu.gif')
+  transform: none !important
+  &.bespoke-backdrop-active
+    opacity: 0.8
+    
+.strong
+  background-color : #FF2D55
+
+.red
+  color : #FF2D55
+  
+.yellow
+  color : #FFCC00
+
+.green
+  color : #4CD964
+
+.blue
+  color : #007AFF
+
+.puple
+  color : #C86EDF
+  
+.gray
+  color : #999
+.darkgray
+  color : #222
+
+.circle
+  border-radius : 50%
+  
+
+article
+  &.bespoke-parent
+    &.primary
+      background: primary
+    &.white
+      background: white
+    &.green
+      background: #4CD964
+    &.blue
+      background : #007AFF
+    &.puple
+      background : #C86EDF
+    &.xecon
+      background : #404040;
